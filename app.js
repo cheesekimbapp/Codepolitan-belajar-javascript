@@ -151,11 +151,20 @@
 //     number++;
 // } // ini akan menampilkan angka 0 sampai 10
 
-// contoh while loop tebak password
-const password = 'Admin123';
-let tebak = prompt('Tebak passwordnya');
-while (tebak !== password) {
-    tebak = prompt('Tebakan salah, coba lagi');
-} // ini akan menampilkan prompt tebakan salah, coba lagi jika salah
+// // contoh while loop tebak password
+// const password = 'Admin123';
+// let tebak = prompt('Tebak passwordnya');
+// while (tebak !== password) {
+//     tebak = prompt('Tebakan salah, coba lagi');
+// } // ini akan menampilkan prompt tebakan salah, coba lagi jika salah
 
-alert('Tebakan benar'); // ini akan menampilkan alert tebakan benar jika benar
+// alert('Tebakan benar'); // ini akan menampilkan alert tebakan benar jika benar
+
+
+let input = prompt('katakan sesuatu');
+while (true) {
+    input = prompt(input);
+    if (input.toLowerCase() === 'stop') break;
+}
+
+alert('Berhenti');
