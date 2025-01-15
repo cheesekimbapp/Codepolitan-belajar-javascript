@@ -94,3 +94,68 @@
 //     default:
 //         console.log('Hari ini hari apa yaa?');
 // }
+
+
+// // perulangan for
+// for (let i = 1; i<=20; i++) {
+//     console.log(i);
+// } //ini akan menampilkan angka 1 sampai 20
+
+
+// for (let i = 0; i <= 20; i+=2) {
+//     console.log(i);
+// } //ini akan menampilkan angka genap dari 0 sampai 20
+
+// for (let i = 20; i >= 0; i--) {
+//     console.log(i);
+// } //ini akan menampilkan angka dari 20 sampai 0
+
+// for (let i = 1; i <= 100000; i*=10) {
+//     console.log(i);
+// } //ini akan menampilkan angka 1, 10, 100, 1000, 10000, 100000
+
+// //perulangan for untuk array
+// const animals = ['kucing', 'kelinci', 'ayam', 'bebek', 'ikan'];
+// for (let i = 0; i < animals.length; i++) {
+//     console.log(i + 1, animals[i]);
+// } // ini akan menampilkan semua data array animals
+
+//nested loop for
+// const barisMurid = [
+//     ['Asep', 'Budi', 'Caca'],
+//     ['Dedi', 'Euis', 'Fafa'],
+//     ['Gaga', 'Hani', 'Iwan']
+// ];
+
+// for (let i = 0; i < barisMurid.length; i++) {
+//     const row = barisMurid[i];
+//     console.log(`Kursi Baris #${i + 1}`);
+//     for (let j = 0; j < row.length; j++) {
+//         console.log(`   ${row[j]}`);
+//     }
+// } // ini akan menampilkan data array barisMurid
+
+// // nested loop for
+// const pilihan = 'abcd';
+// for (let i = 1; i<10; i++) {
+//     console.log(`${i}. Soal nomor ${i}:`);
+//     for(let j = 0; j < pilihan.length; j++){
+//         console.log(`   ${pilihan[j]}. Pilihan Jawaban`);
+//     }
+// } // ini akan menampilkan soal nomor 1 sampai 9 dengan pilihan jawaban a, b, c, d
+
+// // // while loop
+// let number = 0;
+// while (number <= 10) {
+//     console.log(number);
+//     number++;
+// } // ini akan menampilkan angka 0 sampai 10
+
+// contoh while loop tebak password
+const password = 'Admin123';
+let tebak = prompt('Tebak passwordnya');
+while (tebak !== password) {
+    tebak = prompt('Tebakan salah, coba lagi');
+} // ini akan menampilkan prompt tebakan salah, coba lagi jika salah
+
+alert('Tebakan benar'); // ini akan menampilkan alert tebakan benar jika benar
